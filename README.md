@@ -1,10 +1,15 @@
-Extra packages:
+**Usage**
+```
+yarn install
+npm start
+```
+
+
+***Extra packages:***
 
 yarn add apollo-client auth0-lock bootstrap graphql-tag react-apollo react-router sass-loader subscriptions-transport-ws
 
 tatt ut: node-sass install json-loader npm
-
-
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
