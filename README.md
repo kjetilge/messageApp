@@ -4,6 +4,8 @@ yarn install
 npm start
 ```
 
+Failng code is in src/utilities/makeApolloClient.js
+
 
 ***Extra packages:***
 
