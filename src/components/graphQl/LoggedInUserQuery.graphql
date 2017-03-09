@@ -1,0 +1,9 @@
+query LoggedInUser {
+  viewer {
+    user {
+      id
+      username
+      nickname
+    }
+  }
+}

@@ -1,0 +1,13 @@
+query GetPublicChannels($wherePublic: ChannelWhereArgs, $orderBy: [ChannelOrderByArgs]) {
+  viewer {
+    allChannels(where: $wherePublic, orderBy: $orderBy) {
+      edges {
+        node {
+          id
+          name
+          isPublic
+        }
+      }
+    }
+  }
+}

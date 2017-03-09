@@ -1,0 +1,9 @@
+subscription newChannels($subscriptionFilter:ChannelSubscriptionFilter) {
+  subscribeToChannel(mutations:[createChannel], filter: $subscriptionFilter) {
+    value {
+      id
+      name
+      createdAt
+    }
+  }
+}

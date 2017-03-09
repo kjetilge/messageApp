@@ -1,0 +1,21 @@
+query GetPublicChannels($channelId: ID!, $messageOrder: [MessageOrderByArgs]) {
+  getChannel(id: $channelId) {
+    id
+    name
+    messages(last: 50, orderBy: $messageOrder) {
+      edges {
+        node {
+          id
+          content
+          createdAt
+          author {
+            id
+            username
+            nickname
+            picture
+          }
+        }
+      }
+    }
+  }
+}

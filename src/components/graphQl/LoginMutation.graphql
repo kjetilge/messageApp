@@ -1,0 +1,8 @@
+mutation Login($credential: LoginUserWithAuth0Input!) {
+  loginUserWithAuth0(input: $credential) {
+    user {
+      id
+      username
+    }
+  }
+}

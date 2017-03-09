@@ -1,0 +1,14 @@
+mutation CreateMessage($message: CreateMessageInput!) {
+  createMessage(input: $message) {
+    changedMessage {
+      id
+      content
+      author {
+        id
+        username
+        nickname
+        picture
+      }
+    }
+  }
+}

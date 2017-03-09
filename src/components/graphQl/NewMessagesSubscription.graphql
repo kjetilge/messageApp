@@ -1,0 +1,15 @@
+subscription newMessages($subscriptionFilter:MessageSubscriptionFilter) {
+  subscribeToMessage(mutations:[createMessage], filter: $subscriptionFilter) {
+    value {
+      id
+      content
+      createdAt
+      author {
+        id
+        username
+        nickname
+        picture
+      }
+    }
+  }
+}
